@@ -47,11 +47,12 @@
     runAjax();
 
     function showDatesAndTemps(minMaxTemps) {
-        let date1 = new Date(minMaxTemps[1].date).toDateString();
-        let date2 = new Date(minMaxTemps[2].date).toDateString();
-        let date3 = new Date(minMaxTemps[3].date).toDateString();
-        let date4 = new Date(minMaxTemps[4].date).toDateString();
-        let date5 = new Date(minMaxTemps[5].date).toDateString();
+        let date1 = new Date(minMaxTemps[0].date).toDateString();
+        let date2 = new Date(minMaxTemps[1].date).toDateString();
+        let date3 = new Date(minMaxTemps[2].date).toDateString();
+        let date4 = new Date(minMaxTemps[3].date).toDateString();
+        let date5 = new Date(minMaxTemps[4].date).toDateString();
+
 
         Day1.lastElementChild.firstElementChild.innerText = `${date1}:\n\n${parseInt(minMaxTemps[0].max)} ℉`;
         Day2.lastElementChild.firstElementChild.innerText = `${date2}:\n\n ${parseInt(minMaxTemps[1].max)} ℉`;
